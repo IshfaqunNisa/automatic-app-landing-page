@@ -1,3 +1,4 @@
+
 .imageWrapper {					// Sets the background image in the header area
 	height: 714px;
 	background: 
@@ -275,20 +276,28 @@ nav > ul li a:active {
 	display: flex;
 	flex: 0 1 auto;
 	flex-direction: column;
-	align-items: start;
+	align-items: flex-start;
 	justify-content: center;
-	margin-left: 30px;
+	margin-left: 30 px;
 }
 
 .appName {
-	color: $app-title-color;
+	font-family: "Bitter", serif;
+	font-weight: 400;
+  	font-style: normal;
+    font-size: 130px; /* Example size */
+    color: #f6f6cc; /* Example color */
+	
 }
 
 .appPrice {
-	color: $app-price-color;
+	color: #ffffff;
 	font-weight: normal;
-	margin-top: 13px;
+	font-size: 40px;
+	margin-top:0px;
+	margin-left: 0 px;
 }
+
 
 @media only screen and (max-width: 768px) {
 
@@ -312,13 +321,18 @@ nav > ul li a:active {
 } 
 
 .appDescriptionContainer {
-	font-size: 2.5rem;
-	font-weight: normal;
+	font-size: 2em;
+	font-weight: 300;
 	width: 100%;
-	align-items: flex-start;
+	align-items: flex-end;
 	margin-top: 45px;
+	
 	flex: 0 1 auto;
 	line-height: 1.5;
+	font-family: "Playwrite CZ", cursive;
+  	font-optical-sizing: auto;
+  	
+  	font-style: italic;
 }
 
 .appDescription {
@@ -335,6 +349,7 @@ nav > ul li a:active {
 
 .downloadButtonsContainer {
 	display: inline-block;
+	width: 100%;
 	margin-top: 42px;
 	filter: $drop-shadow;
 }
@@ -474,8 +489,9 @@ nav > ul li a:active {
 .features {
 	grid-area: c;
 	display: flex;
+	
 	flex: 0 1 auto;
-	align-content: flex-start;
+	align-content: center;
 	justify-content: flex-start;
 	flex-grow: 1;
 	flex-wrap: wrap;
@@ -484,10 +500,10 @@ nav > ul li a:active {
 
 .feature {
 	display: flex;
-	padding-top: 63px;
-	padding-left: 15px;
+	align-content: center;
+	justify-content: center;
 	padding-right: 15px;
-	width: calc(100%/3);
+	width: calc(100%);
 }
 
 .feature:nth-child(-n+3) {
@@ -502,13 +518,13 @@ nav > ul li a:active {
 	padding-left: 0px;
 }
 
-.iconBack {
-	color: $feature-icons-background-color;
-}
+// .iconBack {
+// 	color: $feature-icons-background-color;
+// }
 
-.iconTop {
-	color: $feature-icons-foreground-color;
-}
+// .iconTop {
+// 	color: $feature-icons-foreground-color;
+// }
 
 .socialIconBack {
 	color: $social-icons-background-color;
@@ -523,13 +539,41 @@ nav > ul li a:active {
 }
 
 .featureText > h3 {
-	color: $feature-title-color;
+	color: #523F38;
+	font-size: 4em;
+	font-weight: 700;
+	width: 100%;
+	text-align: center;
+	
+	margin-top: 45px;
+	
+	
+	flex: 0 1 auto;
+	line-height: 1.5;
+	font-family: "Playwrite CZ", cursive;
+  	font-optical-sizing: auto;
+  	
+  	font-style: italic;
+
 }
 
 .featureText > p {
-	color: $feature-text-color;
-	margin-top: 8px;
+	color: #0E4554;
+	margin-top: 15px;
 	line-height: 1.5;
+	font-size: 2em;
+	font-weight: 300;
+	width: 100%;
+	text-align: center;
+	
+	margin-top: 45px;
+	
+	flex: 0 1 auto;
+	line-height: 1.5;
+	font-family: "Playwrite CZ", cursive;
+  	font-optical-sizing: auto;
+  	
+  	font-style: normal;
 }
 
 @media only screen and (max-width: 992px) {
